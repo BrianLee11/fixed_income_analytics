@@ -1,8 +1,8 @@
 # Fixed Income Analytics
 
-채권과 금리 상품의 핵심 개념을 Python으로 구현하며 학습하는 프로젝트입니다. 단순한 채권 객체에서 시작해 현금흐름, 가격, 만기수익률, 듀레이션, 컨벡서티, 수익률 곡선 및 상대가치 분석으로 범위를 확장하는 것을 목표로 합니다.
+This project explores the core concepts of bonds and interest-rate products through Python implementations. It starts with a simple bond object and aims to expand into cash flows, pricing, yield to maturity, duration, convexity, yield curves, and relative-value analysis.
 
-> 현재 상태: 초기 개발 단계입니다. 기본 `Bond` 클래스와 첫 번째 학습 노트북이 작성되어 있으며, 나머지 문서와 노트북은 향후 구현을 위한 자리표시자입니다.
+> Current status: The project is in an early stage of development. A basic `Bond` class and the first learning notebook are available; the remaining documents and notebooks are placeholders for future work.
 
 ## Repository structure
 
@@ -25,20 +25,20 @@
 
 ## Topics
 
-- 채권의 기본 속성과 표현
-- 쿠폰 및 원금 현금흐름 생성
-- 채권 가격 계산
-- 만기수익률(YTM) 산출
-- 듀레이션, 수정 듀레이션 및 DV01
-- 컨벡서티
-- 수익률 곡선
-- 채권 상대가치 분석
+- Basic bond attributes and representation
+- Coupon and principal cash-flow generation
+- Bond pricing
+- Yield-to-maturity (YTM) calculation
+- Duration, modified duration, and DV01
+- Convexity
+- Yield curves
+- Bond relative-value analysis
 
-각 주제의 예정 학습 순서는 [notebooks README](python/notebooks/README.md)에서 확인할 수 있습니다.
+See the [notebooks README](python/notebooks/README.md) for the planned learning sequence.
 
 ## Quick start
 
-Python 3.10 이상을 권장합니다. 현재 패키징 설정과 의존성 목록은 작성 중이므로, 저장소를 복제한 뒤 소스 디렉터리를 `PYTHONPATH`에 추가해 사용할 수 있습니다.
+Python 3.10 or later is recommended. The packaging configuration and dependency list are still in progress, so clone the repository and add the source directory to `PYTHONPATH` to use the current code.
 
 ```bash
 git clone https://github.com/BrianLee11/fixed_income_analytics.git
@@ -48,19 +48,19 @@ source python/.venv/bin/activate
 export PYTHONPATH="$PWD/python/src"
 ```
 
-Jupyter를 별도로 설치한 뒤 첫 번째 노트북을 열 수 있습니다.
+Install Jupyter separately to open the first notebook.
 
 ```bash
 python -m pip install jupyter
 jupyter lab python/notebooks
 ```
 
-소스 코드의 현재 사용 방법은 [Python source README](python/src/README.md)를 참고하세요.
+See the [Python source README](python/src/README.md) for current usage instructions.
 
 ## Development status
 
-이 저장소는 학습과 점진적 구현을 위한 작업 공간입니다. 공개 API, 계산 방식 및 디렉터리 구조는 개발 과정에서 변경될 수 있습니다.
+This repository is a workspace for learning and incremental implementation. Public APIs, calculation methods, and the directory structure may change during development.
 
 ## License
 
-이 프로젝트는 [MIT License](LICENSE)를 따릅니다.
+This project is licensed under the [MIT License](LICENSE).
